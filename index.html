@@ -45,7 +45,7 @@
         <span class="wave">a</span>
       </em> sorrisos
     </h1>
-    <p class="hero-sub fade-in">Laboratório especializado em próteses odontológicas para clínicas e dentistas que exigem o melhor.</p>
+    <p class="hero-sub fade-in">Laboratório especializado em próteses flexíveis para clínicas e dentistas que exigem o melhor.</p>
     <div class="hero-actions fade-in">
       <a href="#contato" class="btn-primary">
         <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
@@ -99,7 +99,7 @@
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- SOBRE -->
 <section class="about" id="sobre">
   <div class="about-text">
     <span class="section-tag">Quem somos</span>
@@ -216,60 +216,51 @@
       Falar pelo WhatsApp
     </a>
   </div>
-  <div class="contact-form-side">
-    <div class="form-row">
-      <div class="form-group">
-        <label>Nome</label>
-        <input type="text" placeholder="Dr. João Silva" />
-      </div>
-      <div class="form-group">
-        <label>Clínica / Consultório</label>
-        <input type="text" placeholder="Clínica Odonto" />
-      </div>
+<form action="https://formspree.io/f/xpqoevqk" method="POST" id="contact-form">
+  <div class="form-row">
+    <div class="form-group">
+      <label>Nome</label>
+      <input type="text" name="nome" placeholder="Dr. João Silva" />
     </div>
     <div class="form-group">
-      <label>WhatsApp</label>
-      <input type="tel" placeholder="(11) 9 4525-2600" />
+      <label>Clínica / Consultório</label>
+      <input type="text" name="clinica" placeholder="Clínica Odonto" />
     </div>
-    <div class="form-group">
-      <label>Tipo de prótese</label>
-      <select>
-        <option value="">Selecione...</option>
-        <option>Prótese Fixa (coroa/ponte)</option>
-        <option>Prótese sobre Implante</option>
-        <option>Faceta / Laminado</option>
-        <option>Prótese Removível</option>
-        <option>Protocolo All-on</option>
-        <option>Outro / Dúvida</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label>Mensagem</label>
-      <textarea placeholder="Descreva o caso, quantidade de peças, prazo desejado..."></textarea>
-    </div>
-    <button class="btn-form">Enviar solicitação</button>
   </div>
-</section>
+  <div class="form-group">
+    <label>WhatsApp</label>
+    <input type="tel" name="whatsapp" placeholder="(11) 9 4525-2600" />
+  </div>
+  <div class="form-group">
+    <label>Tipo de prótese</label>
+    <select name="protese">
+      <option value="">Selecione...</option>
+      <option>Prótese Fixa (coroa/ponte)</option>
+      <option>Prótese sobre Implante</option>
+      <option>Faceta / Laminado</option>
+      <option>Prótese Removível</option>
+      <option>Protocolo All-on</option>
+      <option>Outro / Dúvida</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label>Mensagem</label>
+    <textarea name="mensagem" placeholder="Descreva o caso..."></textarea>
+  </div>
+  <button type="submit" class="btn-form">Enviar solicitação</button>
+</form>
 
-<!-- FOOTER -->
+<!-- RODAPÉ -->
 <footer>
   <a class="footer-logo" href="#"> <span>Bernardo</span> Próteses</a>
   <p>© 2026 — Laboratório de Prótese Odontológica. São Paulo, SP.</p>
+  <div id="form-porra" style="display: none;">
+  <span id="form-msg">oi</span>
+</div>
 </footer>
 
-<script>
-  // Smooth scroll for nav links
-  document.querySelectorAll('a[href^="#"]').forEach(a => {
-    a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
-      if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
-    });
-  });
-  // Form submit placeholder
-  document.querySelector('.btn-form').addEventListener('click', () => {
-    alert('Mensagem enviada! Retornaremos em breve pelo WhatsApp.');
-  });
 </script>
 <script src="darkmode.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
