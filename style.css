@@ -423,7 +423,7 @@ section {
   padding: 1rem 1.25rem;
   background: var(--fixed-dark);
   border-radius: 2px;
-  border-left: 2px solid var(--accent);
+  border-left: 2px solid var(--);
 }
 .about-feat-icon {
   color: var(--fixed-light);
@@ -465,63 +465,6 @@ section {
 }
 .about-img svg {
   opacity: 0.35;
-}
-
-/* SERVICES */
-.services {
-  background: #1c1c1a;
-  color: var(--warm-white);
-}
-.services .section-tag {
-  color: var(--fixed-light);
-}
-.services .section-tag::before {
-  background: var(--accent-light);
-}
-.services h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
-  font-weight: 300;
-  line-height: 1.2;
-  max-width: 500px;
-  margin-bottom: 3.5rem;
-  color: var(--fixed-light);
-}
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5px;
-  background: rgba(250, 250, 247, 0.08);
-}
-.service-card {
-  background: #1c1c1a;
-  padding: 2.5rem 2rem;
-  border: 0.5px solid rgba(250, 250, 247, 0.08);
-  transition: background 0.3s;
-}
-.service-card:hover {
-  background: rgba(184, 153, 90, 0.08);
-}
-.service-num {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 3rem;
-  font-weight: 300;
-  color: rgba(184, 153, 90, 0.3);
-  display: block;
-  line-height: 1;
-  margin-bottom: 1.5rem;
-}
-.service-card h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 1.4rem;
-  font-weight: 400;
-  margin-bottom: 0.75rem;
-  color: var(--fixed-light);
-}
-.service-card p {
-  font-size: 0.85rem;
-  color: rgba(250, 250, 247, 0.55);
-  line-height: 1.8;
 }
 
 /* PORTFOLIO */
