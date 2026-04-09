@@ -5,6 +5,7 @@ body.dark {
   --charcoal: #f7f4ee;
   --muted: #a0a09a;
   --label-color: rgb(0, 0, 0);
+  --bone: #00000031;
 }
 
 body.dark .hero-deco {
@@ -28,7 +29,7 @@ body.dark #theme-toggle:hover { background: rgba(250,250,247,0.1); }
 body.dark .hero-card { border-color: transparent; background: var(--fixed-light); } 
 body.dark .hero-stat-block { background: var(--cream);}
 body.dark .hero-stat .label { color: var(--fixed-light); }
-
+body.dark .contact-icon svg { stroke: #fafaf7}
 /* TEMA ESCURO */
 #theme-toggle {
   background: transparent;
