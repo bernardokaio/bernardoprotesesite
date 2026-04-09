@@ -671,12 +671,12 @@ section {
   display: none;
   transition: opacity 0.3s ease;
 }
-#form-porra.sucess {
+#form-porra.success {
   background: var(--charcoal);
   color: var(--warm-white);
   border-left: 3px solid #25d366;
 }
-#form-toast.error {
+#form-porra.error {
   background: var(--charcoal);
   color: var(--warm-white);
   border-left: 3px solid #e24b4a;
