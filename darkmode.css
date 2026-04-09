@@ -22,11 +22,12 @@ body.dark nav { background: #252522; }
 body.dark footer { background: #252522; }
 body.dark .hero-visual { background: #3f3f3f; }
 body.dark .footer-logo { color: #fafaf7; }
-body.dark .nav-logo span { color: blue; }
-body.dark .hero-stat-block { border-color: rgb(0,0,0); }
+/*body.dark .nav-logo span { color: blue; } */
 body.dark .btn-primary { color: var(--fixed-dark); }
 body.dark #theme-toggle:hover { background: rgba(250,250,247,0.1); }
 body.dark .hero-card { border-color: transparent; background: var(--fixed-light); } 
+body.dark .hero-stat-block { background: var(--cream);}
+body.dark .hero-stat .label { color: var(--fixed-light); }
 
 /* TEMA ESCURO */
 #theme-toggle {
