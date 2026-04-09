@@ -102,8 +102,7 @@ nav {
   border-radius: 2px;
 }
 .nav-cta:hover {
-  background: var(--accent);
-  color: var(--charcoal) !important;
+  transform: translateY(-8px);
 }
 
 /* HERO */
