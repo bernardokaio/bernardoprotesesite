@@ -375,7 +375,7 @@ section {
   font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--fixed-light);
+  color: var(--charcoal);
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -501,8 +501,8 @@ section {
   grid-column: span 2;
   aspect-ratio: 16/9;
 }
-.portfolio-item svg {
-  opacity: 0.25;
+.portfolio-item img {
+  cursor: pointer;
 }
 .portfolio-overlay {
   position: absolute;
@@ -713,7 +713,7 @@ footer {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.7rem;
   font-weight: 500;
-  color: var(--warm-white);
+  color: var(--charcoal);
   text-decoration: none;
 }
 
@@ -826,4 +826,30 @@ footer p {
   .form-row {
     grid-template-columns: 1fr;
   }
+}
+
+/* olha que lindo esse tal de lightbox */
+#lightbox {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+}
+
+#lightbox-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.85);
+  cursor: pointer;
+}
+
+#lightbox-img {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  border-radius: 4px;
+  z-index: 2;
 }
