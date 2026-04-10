@@ -1,5 +1,7 @@
-// Essa porra aqui previne que você seja direcionado pra merda do formspree e mostra um alerta bonitinho  
+// pra que serve isso? acho que é pra fazer o js executar só depois de carregar a página mas num sei tmj
+document.addEventListener('DOMContentLoaded', () => {
 
+// Essa porra aqui previne que você seja direcionado pra merda do formspree e mostra um alerta bonitinho  
 const form = document.getElementById('contact-form');
 
 function showToast(message, type) {
@@ -22,7 +24,7 @@ form.addEventListener('submit', async (e) => {
     showToast('Mensagem enviada! Retornaremos em breve.', 'success');
     form.reset();
   } else {
-    showToast('Erro ao enviar. Verifique se os campos foram preenchidos corretamente e tente pelo WhatsApp!', 'error');
+    showToast('Erro ao enviar. Verifique se os campos foram preenchidos corretamente ou tente pelo WhatsApp!', 'error');
   }
 });
 
@@ -33,3 +35,21 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
       if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
     });
   });
+
+// lightbox simples
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+document.querySelectorAll('.portfolio-item img').forEach(img => {
+   console.log('imagem encontrada:', img.src);
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.style.display = 'flex';
+  });
+});
+
+document.getElementById('lightbox-overlay').addEventListener('click', () => {
+  lightbox.style.display = 'none';
+});
+
+});
