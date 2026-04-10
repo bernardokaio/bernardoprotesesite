@@ -30,6 +30,8 @@ body.dark .hero-card { border-color: transparent; background: var(--fixed-light)
 body.dark .hero-stat-block { background: var(--cream);}
 body.dark .hero-stat .label { color: var(--fixed-light); }
 body.dark .contact-icon svg { stroke: #fafaf7}
+body.dark .portfolio-note a { color: var(--charcoal); }
+
 /* TEMA ESCURO */
 #theme-toggle {
   background: transparent;
