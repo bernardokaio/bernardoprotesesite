@@ -853,3 +853,24 @@ footer p {
   border-radius: 4px;
   z-index: 2;
 }
+
+.lightbox-msg {
+  position: absolute;
+  z-index: 3;
+  color: var(--fixed-light);
+  bottom: 19rem;
+}
+
+/* tal da lente */
+#lens {
+  display: none;
+  position: fixed;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  pointer-events: none;
+  z-index: 1001;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
