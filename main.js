@@ -42,7 +42,6 @@ const lightbox = document.getElementById('lightbox');
 const lightboxImg = document.getElementById('lightbox-img');
 
 document.querySelectorAll('.portfolio-item img').forEach(img => {
-   console.log('imagem encontrada:', img.src);
   img.addEventListener('click', () => {
     lightboxImg.src = img.src;
     lightbox.style.display = 'flex';
