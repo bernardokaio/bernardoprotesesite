@@ -332,33 +332,45 @@ nav {
   line-height: 1;
 }
 .hero-stat-block {
-  position: absolute;
+  position: relative;
   z-index: 1;
   background: var(--cream);
   color: var(--charcoal);
-  bottom: 10.7rem;
-  left: 8.3rem;
   border-radius: 0 0 12px 12px;
-  padding: 4rem 4.8rem;
-  overflow: hidden;
+  padding: 2rem 2rem;
   display: flex;
   flex-direction: row;
-  gap: 3rem;
+  justify-content: space-around;
+  gap: 1rem;
+  width: 100%;
+  align-items: flex-end;
 
 }
+
+.hero-stat {
+  transform: translateY(25px);
+}
 .hero-stat.s1 {
- border-right:0.5px solid rgba(250,250,247,0.15);
- padding-right: 17px;
+ position: relative;
+}
+.hero-stat.s1::after{
+  content: '';
+  position: absolute;
+  right: -2.5rem;
+  top: 1%;
+  height: 100%;
+  width: 0.5px;
+  background: rgba(250,250,247,0.15);
 }
 .hero-stat .num {
   font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
   font-weight: 300;
-  color: var(--charcoal);
+  color: var(--blue);
   display: block;
   line-height: 1;
 }
-.hero-stat.s1 .label {
+.hero-stat .label {
   font-size: 0.72rem;
   position: relative;
   padding: 0rem, 10rem;
